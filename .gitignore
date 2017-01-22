@@ -20,4 +20,4 @@
 
 coverage
 
-/app/config/application.yml
+application.yml
