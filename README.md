@@ -1,5 +1,7 @@
 Based on https://github.com/netguru-training/pairguru with following tasks completed
 
+Create config/application.yml based on config/application.yml.example. Make sure to include a valid moviedb api key
+
 ### Task 1 - consume api
  We would like to have more information about the movie in movie show page. The information should come from themoviedb api. We should display movie poster, average rating and plot overview. We can't store this data in database.
 

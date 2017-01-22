@@ -1,3 +1,6 @@
 $('.rating').html("rating: <%= escape_javascript(@response[:data][:vote_average]) %>");
 $('.overview').html("<%= escape_javascript(@response[:data][:overview]) %>");
 $('.poster').html("<img class='img-rounded col-xs-12 no-padding' src=<%= escape_javascript(ENV['themoviedb_base_image_path']+@response[:data][:poster_path]) %> />");
+<%- if @response[:code] == 401 %>
+  alert('Could not authorize with themoviedb api, please make sure that correct key is provided in config/application.yml');
+<%- end %>
