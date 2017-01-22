@@ -1,15 +1,5 @@
-## Welcome to Pairguru App!
-Place where we examine our candidates
+Based on https://github.com/netguru-training/pairguru with following tasks completed
 
-## :hammer: Setup
-
-Before pairing:
- - Clone repo `git clone git@github.com:netguru-training/pairguru.git`
- - run `bundle install` within app directory
- - run `rake db:setup` This will create database, run migrations and fill db with seeds
- - run `rails s` :boom:
-
- ## Pre-interview tasks (optional)
  ### Task 1 - consume api
  We would like to have more information about the movie in movie show page. The information should come from themoviedb api. We should display movie poster, average rating and plot overview. We can't store this data in database.
 
