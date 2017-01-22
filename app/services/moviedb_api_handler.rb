@@ -19,7 +19,7 @@ class MoviedbApiHandler
     ENV['themoviedb_v3_movie_search'] + ENV['themoviedb_v3_api_key'] + '&query=' + query
   end
 
-  # fetch keys from response data and return a front-end usable, formatted hash
+  # fetch keys from response data and return a clean, formated hash
   def self.construct_data(data, keys)
     returnValue = {}
     keys.each do |key|

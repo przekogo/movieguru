@@ -15,6 +15,7 @@ class MoviesController < ApplicationController
     redirect_to root_path, notice: 'Movies exported'
   end
 
+  # fetches movie details from moviedb api
   def get_moviedb_data
     @response = MoviedbApiHandler.get_movie_details(params[:title], ['poster_path', 'vote_average', 'overview'])
     respond_to do |format|
