@@ -1,4 +1,5 @@
 class MoviedbApiHandler
+  
   # queries moviedb api for details about a movie
   def self.get_movie_details(title, details)
     Rails.logger.info('querying moviedb api for info about ' + title)

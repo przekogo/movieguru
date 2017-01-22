@@ -15,6 +15,13 @@ Rails.application.routes.draw do
       get :export
     end
   end
-
+  namespace :api, path: '', constraints: {subdomain: 'api'}, defaults: {format: :json} do
+    namespace :v1 do
+      resources :movies
+    end
+    namespace :v2 do
+      resources :movies
+    end
+  end
   post 'movies/get_moviedb_data', to: 'movies#get_moviedb_data'
 end

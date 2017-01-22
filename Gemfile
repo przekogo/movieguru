@@ -20,11 +20,13 @@ group :development do
   gem 'rails-erd'
   gem 'better_errors'
   gem 'bullet'
-  gem 'pry-rails'
   gem 'binding_of_caller'
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'letter_opener'
+    gem 'wirble'
+  gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :development, :test do
@@ -33,9 +35,6 @@ group :development, :test do
   gem 'faker', '~> 1.4.3'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'simplecov'
-  gem 'wirble'
-  gem 'hirb'
-  gem 'awesome_print'
 end
 
 group :test do
