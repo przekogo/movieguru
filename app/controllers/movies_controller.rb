@@ -5,13 +5,13 @@ class MoviesController < ApplicationController
   expose(:movie)
 
   def send_info
-    MovieInfoMailer.send_info(current_user, movie).deliver_now
+    SendMovieInfoJob.perform_async(current_user, movie)
     redirect_to :back, notice: 'Email sent with movie info'
   end
 
   def export
     file_path = 'tmp/movies.csv'
-    MovieExporter.new.call(current_user, file_path)
+    SendFileJob.perform_async(current_user, file_path)
     redirect_to root_path, notice: 'Movies exported'
   end
 

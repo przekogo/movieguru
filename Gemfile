@@ -15,6 +15,7 @@ gem 'annotate', '~> 2.6.5'
 gem 'figaro'
 gem 'rest-client'
 gem "font-awesome-rails"
+gem 'sucker_punch'
 
 group :development do
   gem 'rails-erd'
@@ -24,7 +25,7 @@ group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'letter_opener'
-    gem 'wirble'
+  gem 'wirble'
   gem 'hirb'
   gem 'awesome_print'
 end
