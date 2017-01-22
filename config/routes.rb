@@ -15,4 +15,6 @@ Rails.application.routes.draw do
       get :export
     end
   end
+
+  post 'movies/get_moviedb_data', to: 'movies#get_moviedb_data'
 end

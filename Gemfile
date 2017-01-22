@@ -12,6 +12,9 @@ gem 'decent_decoration'
 gem 'decent_exposure'
 gem 'bootstrap-sass'
 gem 'annotate', '~> 2.6.5'
+gem 'figaro'
+gem 'rest-client'
+gem "font-awesome-rails"
 
 group :development do
   gem 'rails-erd'
@@ -30,6 +33,9 @@ group :development, :test do
   gem 'faker', '~> 1.4.3'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'simplecov'
+  gem 'wirble'
+  gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :test do

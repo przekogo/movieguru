@@ -1,0 +1,3 @@
+$('.rating').html("rating: <%= escape_javascript(@response[:data][:vote_average]) %>");
+$('.overview').html("<%= escape_javascript(@response[:data][:overview]) %>");
+$('.poster').html("<img class='img-rounded col-xs-12 no-padding' src=<%= escape_javascript(ENV['themoviedb_base_image_path']+@response[:data][:poster_path]) %> />");

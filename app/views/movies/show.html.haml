@@ -1,5 +1,17 @@
-%h1= movie.title
-.jumbotron
-  = movie.description
-- if user_signed_in?
-  %p= link_to 'Email me details about this movie', send_info_movie_path(movie), class: 'btn btn-sm btn-default'
+.row
+  .col-xs-12.title
+    %h1= movie.title
+  .col-xs-12.rating
+    rating:
+    %i.fa.fa-circle-o-notch.fa-spin
+.row
+  .col-xs-4.poster
+    .col-xs-12.text-center
+      %i.fa.fa-circle-o-notch.fa-spin
+  .col-xs-8
+    .jumbotron.overview
+      %p.text-center
+        loading plot overwiev...
+        %i.fa.fa-circle-o-notch.fa-spin
+  - if user_signed_in?
+    %p= link_to 'Email me details about this movie', send_info_movie_path(movie), class: 'btn btn-sm btn-default'

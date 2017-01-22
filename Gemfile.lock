@@ -44,6 +44,7 @@ GEM
     arel (6.0.3)
     autoprefixer-rails (6.5.3.1)
       execjs
+    awesome_print (1.7.0)
     bcrypt (3.1.11)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
@@ -80,6 +81,8 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
     docile (1.1.5)
+    domain_name (0.5.20161129)
+      unf (>= 0.0.5, < 1.0.0)
     draper (2.1.0)
       actionpack (>= 3.0)
       activemodel (>= 3.0)
@@ -94,6 +97,10 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
+    figaro (1.1.1)
+      thor (~> 0.14)
+    font-awesome-rails (4.7.0.1)
+      railties (>= 3.2, < 5.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -105,11 +112,14 @@ GEM
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
     hike (1.2.3)
+    hirb (0.7.3)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
       nokogiri (~> 1.6.0)
       ruby_parser (~> 3.5)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
     i18n (0.7.0)
     jquery-rails (4.2.1)
       rails-dom-testing (>= 1, < 3)
@@ -131,6 +141,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
+    netrc (0.11.0)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
@@ -177,6 +188,10 @@ GEM
     request_store (1.3.1)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
+    rest-client (2.0.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     rspec-core (3.5.4)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
@@ -233,9 +248,13 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.2)
     uniform_notifier (1.10.0)
     warden (1.2.6)
       rack (>= 1.0)
+    wirble (0.1.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -244,6 +263,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.6.5)
+  awesome_print
   better_errors
   binding_of_caller
   bootstrap-sass
@@ -255,12 +275,16 @@ DEPENDENCIES
   draper
   factory_girl_rails (~> 4.0)
   faker (~> 1.4.3)
+  figaro
+  font-awesome-rails
   haml-rails (~> 0.8)
+  hirb
   jquery-rails
   letter_opener
   pry-rails
   rails (= 4.2.7.1)
   rails-erd
+  rest-client
   rspec-rails
   sass-rails (~> 4.0.3)
   shoulda-matchers
@@ -269,6 +293,7 @@ DEPENDENCIES
   spring-commands-rspec
   sqlite3
   uglifier (>= 1.3.0)
+  wirble
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
