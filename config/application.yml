@@ -1,3 +1,0 @@
-themoviedb_v3_api_key: '2eb92c7a3866336a548ffe47c1d90752'
-themoviedb_v3_movie_search: 'https://api.themoviedb.org/3/search/movie?api_key='
-themoviedb_base_image_path: 'https://image.tmdb.org/t/p/w320/'
